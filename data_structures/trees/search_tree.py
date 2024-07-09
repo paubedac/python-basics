@@ -37,3 +37,6 @@ class Node:
             return self.right.find_value(search_value)
         else:
             print(str(self.data) + " was found")
+    
+    def depth(self):
+        return max(self.left.depth() if self.left else 0, self.right.depth() if self.right else 0) + 1

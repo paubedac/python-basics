@@ -52,3 +52,6 @@ class Node:
             res = res + self.postorder_traversal(root.right)
             res.append(root.data)
         return res
+
+    def depth(self):
+        return max(self.left.depth() if self.left else 0, self.right.depth() if self.right else 0) + 1
