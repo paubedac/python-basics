@@ -1,3 +1,3 @@
 # Objective
 
-A compilation of useful algorithms
+A compilation of useful algorithms and data structures
